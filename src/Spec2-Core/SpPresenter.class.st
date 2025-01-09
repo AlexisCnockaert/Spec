@@ -665,7 +665,7 @@ SpPresenter >> initializeWindow: aWindowPresenter [
 
 	aWindowPresenter
 		title: self title;
-		initialExtent: self class preferredExtent;
+		initialExtent: self preferredExtent;
 		windowIcon: self windowIcon;
 		whenResizingDo: [ :ann | self preferredExtent: ann newSize ].
 ]
