@@ -46,6 +46,12 @@ SpModalWindowPresenter class >> adapterName [
 	^ #ModalWindowAdapter
 ]
 
+{ #category : 'accessing' }
+SpModalWindowPresenter class >> defaultPreferredExtent [
+
+	^ 200 @ 100
+]
+
 { #category : 'api' }
 SpModalWindowPresenter >> closeOnBackdropClick [
 	"Answer if the user will be able to click on the backdrop to close the modal 

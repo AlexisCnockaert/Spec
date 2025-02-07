@@ -16,7 +16,7 @@ Class {
 { #category : 'accessing' }
 SpRequestDialog class >> defaultPreferredExtent [
 
-	^ 600@200
+	^ 400@200
 ]
 
 { #category : 'documentation' }
