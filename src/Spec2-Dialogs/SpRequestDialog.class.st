@@ -14,9 +14,9 @@ Class {
 }
 
 { #category : 'accessing' }
-SpRequestDialog class >> defaultExtent [
+SpRequestDialog class >> defaultPreferredExtent [
 
-	^ 450@170
+	^ 400@200
 ]
 
 { #category : 'documentation' }
@@ -168,9 +168,15 @@ SpRequestDialog >> initializePresenters [
 
 { #category : 'initialization' }
 SpRequestDialog >> initializeWindow: aWindowPresenter [
-	
+
 	super initializeWindow: aWindowPresenter.
-	aWindowPresenter whenOpenedDo: [ textInput takeKeyboardFocus; selectAll  ]
+	self preferredExtent: 400@200.
+	aWindowPresenter
+		whenOpenedDo: [
+			textInput
+				takeKeyboardFocus; 
+				selectAll ].
+	
 ]
 
 { #category : 'testing' }
