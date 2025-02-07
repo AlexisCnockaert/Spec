@@ -121,13 +121,6 @@ SpAbstractMessageDialog >> initializePresenters [
 ]
 
 { #category : 'initialization' }
-SpAbstractMessageDialog >> initializeWindow: aWindowPresenter [
-
-	super initializeWindow: aWindowPresenter.
-	aWindowPresenter title: self title
-]
-
-{ #category : 'initialization' }
 SpAbstractMessageDialog >> initializeWindowExtent: aDialogWindowPresenter [
 	
 	aDialogWindowPresenter initialExtent:
